@@ -1,6 +1,6 @@
 /* For testing only */
 *:not(body):not(html) {
-  /*border:1px dashed #000;*/
+  border:1px dashed #000;
 }
 
 .columns {
@@ -55,7 +55,13 @@ margin: 5% 5%;
 
 article {
   width: 90vw;
-  height: 22.5vh;
+  height: 25vh;
+}
+
+article img {
+  max-width: 100px;
+  max-height: 100px;
+  float: left;
 }
 
 @media screen and (min-width: 700px) and (max-width: 1599px) {
@@ -68,10 +74,12 @@ article {
 
   article:nth-of-type(odd) {
     margin-left: 5%;
+    margin-top: 3%;
   }
 
   article:nth-of-type(even) {
     margin-left: 5%;
+    margin-top: 3%;
   }
 }
 
